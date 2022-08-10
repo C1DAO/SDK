@@ -1,0 +1,8 @@
+node_modules/
+build/
+docs/
+dist/
+cache/
+artifacts/
+
+tsconfig.tsbuildinfo
