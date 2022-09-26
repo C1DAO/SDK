@@ -69,6 +69,21 @@ export const CONTRACT_ADDRESSES: {
     },
     l2: DEFAULT_L2_CONTRACT_ADDRESSES,
   },
+  [Chain.GOERLI]: {
+    l1: {
+      AddressManager: '0xe20D75Ab3D30980E2b2bA07540A6a4E29BD9E923' as const,
+      L1CrossDomainMessenger:
+        '0x8004EE770AB72b74482D1B13166C5a9Bc582d909' as const,
+      L1StandardBridge: '0x08DA3ABe3811c8CC02bBeC449031165dBeb42003' as const,
+      StateCommitmentChain:
+        '0xC93cE7D037A86529AA446902e048aa7fBc52959c' as const,
+      CanonicalTransactionChain:
+        '0x271c5f4581aA38EA08c8F3C402696b7a252DE117' as const,
+      BondManager: '0xA8699a864453D3F3Bf005589f491eF399dd77962' as const,
+      VMT: '0x7DcC8302D602613CdF8a82bD22d710266441fc23' as const,
+    },
+    l2: DEFAULT_L2_CONTRACT_ADDRESSES,
+  },
   [Chain.KOVAN]: {
     l1: {
       AddressManager: '0xDF460AcBFD9eF9643F63bCAF59dc9430eE69eCDA' as const,
@@ -118,6 +133,18 @@ export const BRIDGE_ADAPTER_DATA: {
     ETH: {
       Adapter: ETHBridgeAdapter,
       l1Bridge: CONTRACT_ADDRESSES[Chain.ROPSTEN].l1.L1StandardBridge,
+      l2Bridge: predeploys.L2StandardBridge,
+    },
+  },
+  [Chain.GOERLI]: {
+    Standard: {
+      Adapter: StandardBridgeAdapter,
+      l1Bridge: CONTRACT_ADDRESSES[Chain.GOERLI].l1.L1StandardBridge,
+      l2Bridge: predeploys.L2StandardBridge,
+    },
+    ETH: {
+      Adapter: ETHBridgeAdapter,
+      l1Bridge: CONTRACT_ADDRESSES[Chain.GOERLI].l1.L1StandardBridge,
       l2Bridge: predeploys.L2StandardBridge,
     },
   },
