@@ -71,15 +71,15 @@ export const CONTRACT_ADDRESSES: {
   },
   [Chain.GOERLI]: {
     l1: {
-      AddressManager: '0xe20D75Ab3D30980E2b2bA07540A6a4E29BD9E923' as const,
+      AddressManager: '0xCa15BF465451e558E61A01982d19c16009CcE073' as const,
       L1CrossDomainMessenger:
-        '0x8004EE770AB72b74482D1B13166C5a9Bc582d909' as const,
-      L1StandardBridge: '0x08DA3ABe3811c8CC02bBeC449031165dBeb42003' as const,
+        '0x8F11C69B4b0bc46075F35fAd0F59DE273C7C99F2' as const,
+      L1StandardBridge: '0xcCE335A319e91c1DDd349a5DAA276D9956C52a24' as const,
       StateCommitmentChain:
-        '0xC93cE7D037A86529AA446902e048aa7fBc52959c' as const,
+        '0x20D8Fcfba4d9B55DD0ccAde19D26BB9e989b49ee' as const,
       CanonicalTransactionChain:
-        '0x271c5f4581aA38EA08c8F3C402696b7a252DE117' as const,
-      BondManager: '0xA8699a864453D3F3Bf005589f491eF399dd77962' as const,
+        '0xa8146C03Da4a661e7DeF468faEc64497E404f4Dd' as const,
+      BondManager: '0xf3023Ae28B2dED81f2bA19b26cA8121A1d93BD85' as const,
       VMT: '0x7DcC8302D602613CdF8a82bD22d710266441fc23' as const,
     },
     l2: DEFAULT_L2_CONTRACT_ADDRESSES,
