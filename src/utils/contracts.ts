@@ -99,6 +99,21 @@ export const CONTRACT_ADDRESSES: {
     },
     l2: DEFAULT_L2_CONTRACT_ADDRESSES,
   },
+  [Chain.BNBTEST]: {
+    l1: {
+      AddressManager: '0x8a3d7e5C2B6b1581E06Aa0723Ca36beE93b9bc76' as const,
+      L1CrossDomainMessenger:
+        '0x5f59c479eA897B50ef5FEB31FC19f9CD7B8BdE7B' as const,
+      L1StandardBridge: '0xeC44824744637429Dc8fD81653FE4454eF6236a2' as const,
+      StateCommitmentChain:
+        '0xc5c1198583489d0682c2e961B444DBDB382A7175' as const,
+      CanonicalTransactionChain:
+        '0xa2954411dBbDA99B8FF54D545e33C836b04D6600' as const,
+      BondManager: '0x4Bce8CabD4acE3651Ed498Eb7e43be7bB13e8632' as const,
+      VMT: '0xE7f767010Ea938122FCCD0E01eE32410D7A6ED60' as const,
+    },
+    l2: DEFAULT_L2_CONTRACT_ADDRESSES,
+  },
   [Chain.HARDHAT_LOCAL]: {
     l1: {
       AddressManager: '0x5FbDB2315678afecb367f032d93F642f64180aa3' as const,
@@ -157,6 +172,18 @@ export const BRIDGE_ADAPTER_DATA: {
     ETH: {
       Adapter: ETHBridgeAdapter,
       l1Bridge: CONTRACT_ADDRESSES[Chain.KOVAN].l1.L1StandardBridge,
+      l2Bridge: predeploys.L2StandardBridge,
+    },
+  },
+  [Chain.BNBTEST]: {
+    Standard: {
+      Adapter: StandardBridgeAdapter,
+      l1Bridge: CONTRACT_ADDRESSES[Chain.BNBTEST].l1.L1StandardBridge,
+      l2Bridge: predeploys.L2StandardBridge,
+    },
+    ETH: {
+      Adapter: ETHBridgeAdapter,
+      l1Bridge: CONTRACT_ADDRESSES[Chain.BNBTEST].l1.L1StandardBridge,
       l2Bridge: predeploys.L2StandardBridge,
     },
   },
