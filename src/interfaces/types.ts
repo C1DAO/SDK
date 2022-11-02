@@ -17,7 +17,7 @@ export enum Chain {
   ROPSTEN = 3,
   GOERLI = 5,
   KOVAN = 42,
-  BNBTEST = 97,
+  BSCTEST = 97,
   HARDHAT_LOCAL = 31337,
 }
 

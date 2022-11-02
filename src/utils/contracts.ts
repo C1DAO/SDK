@@ -99,7 +99,7 @@ export const CONTRACT_ADDRESSES: {
     },
     l2: DEFAULT_L2_CONTRACT_ADDRESSES,
   },
-  [Chain.BNBTEST]: {
+  [Chain.BSCTEST]: {
     l1: {
       AddressManager: '0x8a3d7e5C2B6b1581E06Aa0723Ca36beE93b9bc76' as const,
       L1CrossDomainMessenger:
@@ -175,15 +175,15 @@ export const BRIDGE_ADAPTER_DATA: {
       l2Bridge: predeploys.L2StandardBridge,
     },
   },
-  [Chain.BNBTEST]: {
+  [Chain.BSCTEST]: {
     Standard: {
       Adapter: StandardBridgeAdapter,
-      l1Bridge: CONTRACT_ADDRESSES[Chain.BNBTEST].l1.L1StandardBridge,
+      l1Bridge: CONTRACT_ADDRESSES[Chain.BSCTEST].l1.L1StandardBridge,
       l2Bridge: predeploys.L2StandardBridge,
     },
     ETH: {
       Adapter: ETHBridgeAdapter,
-      l1Bridge: CONTRACT_ADDRESSES[Chain.BNBTEST].l1.L1StandardBridge,
+      l1Bridge: CONTRACT_ADDRESSES[Chain.BSCTEST].l1.L1StandardBridge,
       l2Bridge: predeploys.L2StandardBridge,
     },
   },
