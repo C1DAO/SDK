@@ -1,4 +1,4 @@
-# @vmeta3/sdk
+# @vmeta3ai/sdk
 
 The `@vmeta3/sdk` package provides a set of tools for interacting with Vmeta3.
 
